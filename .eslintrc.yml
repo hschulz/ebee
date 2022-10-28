@@ -1,0 +1,26 @@
+root: true
+
+parser: "@typescript-eslint/parser"
+
+parserOptions: {
+    "project": "./tsconfig.json"
+}
+
+plugins:
+    - "@typescript-eslint"
+
+extends:
+    - "eslint:recommended"
+    - "plugin:@typescript-eslint/eslint-recommended"
+    - "plugin:@typescript-eslint/recommended"
+
+rules: {
+    "@typescript-eslint/no-inferrable-types": "off",
+    "sort-imports": "error",
+
+    "quotes": "off",
+    "@typescript-eslint/quotes": [ "error", "double" ],
+
+    "semi": "off",
+    "@typescript-eslint/semi": [ "error", "never" ]
+}

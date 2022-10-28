@@ -1,0 +1,39 @@
+{
+    "name": "ebee",
+    "version": "0.1.0",
+    "description": "Event Bus 🐝",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "nyc mocha",
+        "lint": "eslint ."
+    },
+    "keywords": [
+        "event",
+        "bus"
+    ],
+    "author": "Hauke Schulz <hauke27@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hschulz/ebee.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hschulz/ebee/issues"
+    },
+    "dependencies": {
+        "typescript": "^4.6.4"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.3.3",
+        "@types/mocha": "^9.1.1",
+        "@typescript-eslint/eslint-plugin": "^5.39.0",
+        "chai": "^4.3.6",
+        "eslint": "^7.19.0",
+        "mocha": "^10.0.0",
+        "mocha-junit-reporter": "^2.0.2",
+        "nyc": "^15.1.0",
+        "ts-node": "^10.8.1"
+    }
+}
