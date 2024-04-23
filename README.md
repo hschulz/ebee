@@ -1,8 +1,14 @@
 # EBee 🐝
 
-A working event dispatcher.´
+A simple event dispatcher for TypeScript.
 
-## Example
+## Installation
+
+```bash
+npm install @hschulz/ebee
+```
+
+## Usage
 
 ```typescript
 import { EventDispatcher } from "ebee"
@@ -26,3 +32,7 @@ dispatcher.dispatch("my.event", "world")
 /* Unregister my callback function */
 reg.unregister()
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
