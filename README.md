@@ -1,28 +1,28 @@
 # EBee 🐝
 
-A server side event bus.
+A working event dispatcher.´
 
 ## Example
 
 ```typescript
-import Bus from "ebee"
+import { EventDispatcher } from "ebee"
 
-/**
- * My callback function for my event.
- * Greets the given value with hello and writes to console.log
- *
- * @param value Some string
- */
-function myCallback (value: string): void {
-    console.log("hello " + value)
+/* Define the events that can be dispatched */
+type MyEvents = {
+    "my.event": string
 }
 
+/* Get the dispatcher for my events */
+const dispatcher = EventDispatcher.get<MyEvents>()
+
 /* Register my function for my callback and receive the unregister function */
-const unregister = Bus.instance.register("my.event", myCallback)
+const reg = dispatcher.register("my.event", (value): void => {
+    console.log(`hello ${value}`)
+})
 
 /* Trigger my event with some string value */
-Bus.instance.dispatch<string>("my.event", "world")
+dispatcher.dispatch("my.event", "world")
 
 /* Unregister my callback function */
-unregister.unregister()
+reg.unregister()
 ```
