@@ -5,7 +5,6 @@ nbproject/
 
 ### Node ###
 node_modules/
-dist/
 
 ### General ###
 *.log
