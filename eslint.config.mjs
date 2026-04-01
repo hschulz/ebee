@@ -10,7 +10,7 @@ export default tseslint.config(
             "test/",
             "coverage/",
             "**/*.js",
-            "**/*.mjs",
+            "eslint.config.mjs",
         ],
     },
     eslint.configs.recommended,
