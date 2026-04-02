@@ -11,11 +11,11 @@ npm install @hschulz/ebee
 ## Usage
 
 ```typescript
-import { EventDispatcher } from "ebee"
+import { EventDispatcher } from "@hschulz/ebee"
 
 /* Define the events that can be dispatched */
 type MyEvents = {
-    "my.event": string
+    "my.event": (value: string) => void
 }
 
 /* Get the dispatcher for my events */
