@@ -36,6 +36,9 @@
     "bugs": {
         "url": "https://github.com/hschulz/ebee/issues"
     },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
     "devDependencies": {
         "@eslint/js": "^9.39.4",
         "@stylistic/eslint-plugin": "^5.10.0",
