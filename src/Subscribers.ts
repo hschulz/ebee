@@ -1,4 +1,4 @@
-import { EventMap } from "./types"
+import { EventMap } from "./types.js"
 
 /**
  * Subscribers are a collection of callbacks for an event.

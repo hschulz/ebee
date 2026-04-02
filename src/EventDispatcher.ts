@@ -1,7 +1,7 @@
-import { EventDispatcherInterface } from "./EventDispatcherInterface"
-import { EventMap } from "./types"
-import { Registry } from "./Registry"
-import { Subscribers } from "./Subscribers"
+import { EventDispatcherInterface } from "./EventDispatcherInterface.js"
+import { EventMap } from "./types.js"
+import { Registry } from "./Registry.js"
+import { Subscribers } from "./Subscribers.js"
 
 /**
  *

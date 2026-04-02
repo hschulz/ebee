@@ -1,5 +1,5 @@
-import { EventMap } from "./types"
-import { Registry } from "./Registry"
+import { EventMap } from "./types.js"
+import { Registry } from "./Registry.js"
 
 /**
  * Interface for the EventDispatcher class that describes the public API.
