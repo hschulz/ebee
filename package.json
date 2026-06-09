@@ -22,7 +22,8 @@
         "build": "tsc",
         "test": "vitest run --coverage",
         "test:watch": "vitest",
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix ."
     },
     "keywords": [
         "event",
